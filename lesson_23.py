@@ -22,4 +22,23 @@ line = f.readline()
 print(line)
 
 #Read number of letters
-chars = f.read
+chars = f.read(10)
+print(f'Chars: {chars}')
+
+#Position
+print(f'Position: {f.tell()} of {os.stat(sfile).st_size}')
+
+#Just adding more stuff to see file size change
+
+#Seek - move to a position in the file
+#Zero based
+f.seek(0)
+
+#Read all lines
+print('-------------------------------------------------')
+for l in f.readlines():
+    print(l.strip())
+
+#Close the file
+#Allows other applications to work with it
+f.close()
