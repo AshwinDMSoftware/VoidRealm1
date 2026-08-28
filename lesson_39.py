@@ -2,7 +2,6 @@
 #Looping without a loop
 #Maps function calls to a collection of items
 #maps(func, iterables)
-
 #Basic usage - Count len
 people = ['Matt', 'Bryan', 'Tammy', 'Markus']
 
